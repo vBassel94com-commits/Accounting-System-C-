@@ -1,0 +1,37 @@
+﻿<Window x:Class="Eng_Prog.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Eng_Prog"
+        mc:Ignorable="d"
+        Title="MainWindow">
+    <Grid  Background="#FFFFF3F3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="برنامج شركة هندسية للمحاسبة" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="40" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="2" Foreground="#FF142A8B" />
+        <TextBox Name="txtusername" Margin="140,30,10,20"  Grid.Row="1" Grid.Column="0" Background="#FFDADEF0" />
+
+        <TextBlock Text="أسم المستخدم" Margin="20,30,56,20" FontSize="28" Grid.Row="1" Grid.Column="1" Foreground="#FF1D1A21" FontWeight="Bold" FontStyle="Italic"  FontStretch="Condensed" FontFamily="Dubai" />
+
+        <PasswordBox Name="txtpassword" Margin="140,30,10,20" Grid.Row="2" Grid.Column="0" Background="#FFDADEF0" />
+
+        <TextBlock Text="كلمة السر" Margin="56,30,39,20" FontSize="28" Grid.Row="2" Grid.Column="1" Foreground="#FF1D1A21" FontWeight="Bold" FontStyle="Italic" FontFamily="Dubai" />
+        <Button Content="Confirm" Grid.Row="3" Width="150" Height="50" FontSize="25" FontWeight="Bold" Click="Button_Click" Background="#FF142A8B" Foreground="White"/>
+
+
+
+    </Grid>
+</Window>
